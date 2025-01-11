@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Define a versão ES6 como saída.
+    "module": "ESNext", // Usa o sistema de módulos ESNext.
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Define as bibliotecas incluídas no projeto.
+    "jsx": "react-jsx", // Configuração para JSX no React.
+    "moduleResolution": "Node", // Resolve módulos no estilo Node.js.
+    "esModuleInterop": true, // Permite interoperabilidade com módulos CommonJS.
+    "skipLibCheck": true, // Pula verificação de tipos em arquivos de declaração.
+    "strict": true, // Ativa o modo estrito do TypeScript.
+    "forceConsistentCasingInFileNames": true, // Força consistência em maiúsculas e minúsculas.
+    "baseUrl": "./", // Define o diretório base para resolver caminhos.
+    "paths": {
+      "@/*": ["src/*"] // Alias `@` apontando para a pasta `src`.
+    },
+    "outDir": "./dist", // Diretório de saída para arquivos compilados.
+    "allowJs": true, // Permite arquivos JavaScript no projeto.
+    "resolveJsonModule": true, // Habilita importação de arquivos JSON.
+    "allowSyntheticDefaultImports": true, // Permite imports padrão sintéticos.
+    "noImplicitAny": false, // Permite uso implícito de `any` (se necessário).
+    "strictNullChecks": true // Verifica estritamente valores nulos e indefinidos.
+  },
+  "include": ["src"], // Inclui a pasta `src` no projeto.
+  "exclude": ["node_modules", "dist"] // Exclui as pastas `node_modules` e `dist`.
+}
